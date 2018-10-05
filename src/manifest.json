@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "boilerplate",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "permissions": [
+    "tabs",
+    "<all_urls>",
+    "activeTab",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://truefalse.pro/*"
+      ],
+      "js": ["content.bundle.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.bundle.js"],
+    "persistent": false
+  }
+}
