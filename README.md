@@ -1,4 +1,4 @@
-### chrome-extension-typescript-autoreload-etc-boilerplate
+### chrome-extension-build-boilerplate
 
 Chrome extension build boilerplate. Leveraged by typescript, autoreload.
 
